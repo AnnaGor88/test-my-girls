@@ -359,7 +359,7 @@ span {
 }
 
 .gibdd {
-  background-image: url(../assets/image/gibdd.png);
+  background-image: url(../assets/image/gibdd_emb.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
@@ -367,7 +367,7 @@ span {
 
 .government {
   background-image: url(../assets/image/government.png);
-  background-size: contain;
+  background-size: 200px;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -382,11 +382,26 @@ span {
   padding: 20px;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .content {
+    gap: 10px;
+  }
+}
 .content:hover {
   background-color: rgb(238, 215, 109);
 }
 .content_image {
   height: 50px;
+}
+@media screen and (max-width: 767px) {
+  .content_title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content_text {
+    font-size: 14px;
+  }
 }
 
 .sub_link {
@@ -519,14 +534,45 @@ h3.test__number {
   justify-content: space-around;
   padding: 50px 0;
 }
+@media screen and (max-width: 767px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .footer__logo {
   width: 100px;
+}
+.footer__links {
+  color: #ffffff;
 }
 .footer__text {
   color: #ffffff;
   font-weight: 200;
 }
+@media screen and (max-width: 767px) {
+  .footer__text {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+}
 .footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 200px;
+}
+@media screen and (max-width: 767px) {
+  .footer__left {
+    text-align: center;
+    padding: 0 30px;
+    max-width: 200px;
+  }
+}
+.footer_right {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -539,6 +585,7 @@ h3.test__number {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  padding-top: 40px;
 }
 .footer_title {
   color: #ffffff;
@@ -554,6 +601,6 @@ h3.test__number {
 
 .address_img {
   fill: #FFBA00;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */
